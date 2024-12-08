@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Stick&display=swap');
+
+body{
+    background-color: #a0afa0;
+    font-family: "Stick", serif;
+
+}
+
+header{
+    font-size: 64px;
+    height: 15vh;
+    text-align: center;
+}
+
+.upperHalf{
+    background-color: #f2f8f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:40vh;
+    font-size: 40px;
+}
+
+.lowerHalf {
+    background-color: #e4f0ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    font-size: 40px;
+}
+
+.upperHalf:hover,.lowerHalf:hover {
+    background-color: #8490b3;
+    color: #f2f8f2;
+    cursor: pointer;
+}
