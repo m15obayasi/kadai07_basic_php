@@ -6,14 +6,27 @@ body{
     font-family: "Stick", serif;
 }
 
-header{
-    font-size: 24px;
-    height: 15vh;
-    text-align: center;
+.top{
+    display: flex;
 }
 
-header span{
-    font-size: 64px;
+.title{
+    font-size: 3vh;
+    height: 15vh;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.title span{
+    font-size: 6vh;
+}
+
+.timer{
+    font-size: 6vh;
+    width: 10vh;
+    text-align: center;
+    position: fixed;
+    right: 0px;
 }
 
 .startHalf{
@@ -22,7 +35,7 @@ header span{
     justify-content: center;
     align-items: center;
     height:40vh;
-    font-size: 40px;
+    font-size: 7vh;
 }
 
 .upperHalf{
@@ -31,7 +44,7 @@ header span{
     justify-content: center;
     align-items: center;
     height: 40vh;
-    font-size: 40px;
+    font-size: 5vh;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-weight: bold;
 }
@@ -42,7 +55,7 @@ header span{
     justify-content: center;
     align-items: center;
     height: 40vh;
-    font-size: 40px;
+    font-size: 5vh;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-weight: bold;
 }
@@ -50,9 +63,5 @@ header span{
 .startHalf:hover, .upperHalf:hover,.lowerHalf:hover {
     background-color: #8490b3;
     color: #f2f8f2;
-    cursor: pointer;
-}
-
-header:hover{
     cursor: pointer;
 }

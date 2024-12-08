@@ -10,20 +10,24 @@
 </head>
 
 <body>
-    <header><span>Epoch Sort</span><br>先に起きた出来事を選択してください</header>
+    <div class="top">
+        <div class="title">
+            <span>Epoch Sort</span><br>昔の出来事を選択してください
+        </div>
+        <div class="timer"></div>
+    </div>
     <div class="startHalf">
         <div class="start">START</div>
     </div>
     <div class="upperHalf">
-        <div class="upper">a</div>
+        <div class="upper"></div>
     </div>
     <div class="lowerHalf">
-        <div class="lower">b</div>
+        <div class="lower"></div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./js/quiz.js"></script>
-
 </body>
 
 </html>
