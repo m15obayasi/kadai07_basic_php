@@ -1,15 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Stick&display=swap');
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
 
 body{
     background-color: #a0afa0;
     font-family: "Stick", serif;
-
 }
 
 header{
-    font-size: 64px;
+    font-size: 24px;
     height: 15vh;
     text-align: center;
+}
+
+header span{
+    font-size: 64px;
+}
+
+.startHalf{
+    background-color: #f2f8f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:40vh;
+    font-size: 40px;
 }
 
 .upperHalf{
@@ -17,8 +30,10 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    height:40vh;
+    height: 40vh;
     font-size: 40px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: bold;
 }
 
 .lowerHalf {
@@ -28,10 +43,16 @@ header{
     align-items: center;
     height: 40vh;
     font-size: 40px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: bold;
 }
 
-.upperHalf:hover,.lowerHalf:hover {
+.startHalf:hover, .upperHalf:hover,.lowerHalf:hover {
     background-color: #8490b3;
     color: #f2f8f2;
+    cursor: pointer;
+}
+
+header:hover{
     cursor: pointer;
 }
