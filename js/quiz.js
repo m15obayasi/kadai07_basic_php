@@ -57,10 +57,10 @@ function gameStart() {
 $(".upperHalf").on("click", function () {
     if (checkArray[0] < checkArray[1])
     {
-        alert("正解");
         answerCount++;
+        $(".score").html(answerCount+"pt");
     } else {
-        alert("不正解");
+        $(".score").html("×");
     }
     checkArray = [];
     anotherQuestions = [];
@@ -71,10 +71,10 @@ $(".upperHalf").on("click", function () {
 // 回答時のアクション（下半分）
 $(".lowerHalf").on("click", function () {
     if (checkArray[0] > checkArray[1]) {
-        alert("正解");
         answerCount++;
+        $(".score").html(answerCount + "pt");
     } else {
-        alert("不正解");
+        $(".score").html("×");
     }
     checkArray = [];
     gameStart();
@@ -85,9 +85,11 @@ $(".lowerHalf").on("click", function () {
 function timerStart(){
     setInterval(function () {
         count--;
-    $(".timer").html(count);
-    if (count === 0) {
-        alert("ア・・・");
-    }
+        $(".timer").html(count);
+        if (count === 0) {
+            $(".timer").hide();
+        }
     }, 1000);
+
+
 };

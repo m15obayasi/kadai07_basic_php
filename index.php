@@ -11,7 +11,7 @@
 
 <body>
     <div class="top">
-        <div class="score">回答数</div>
+        <div class="score"></div>
         <div class="title">
             <span>Epoch Sort</span><br>昔の出来事を選択してください
         </div>
