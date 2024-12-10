@@ -6,7 +6,8 @@ checkArray = [];
 // 正解数
 let answerCount = 0;
 
-let count = 60; 
+// 残り時間
+let count = 5; 
 
 // 問題一覧
 const questions = [
@@ -85,5 +86,8 @@ function timerStart(){
     setInterval(function () {
         count--;
     $(".timer").html(count);
+    if (count === 0) {
+        alert("ア・・・");
+    }
     }, 1000);
 };
