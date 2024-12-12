@@ -73,3 +73,24 @@ body{
     color: #f2f8f2;
     cursor: pointer;
 }
+
+.kekkaHalf{
+    background-color: #f2f8f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    font-size: 7vh;
+}
+
+.form{
+    margin-top: 20px;
+    text-align: center;
+}
+
+input {
+    width: 50%;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+}

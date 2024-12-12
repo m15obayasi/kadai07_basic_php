@@ -27,6 +27,16 @@
         <div class="lower"></div>
     </div>
 
+    <div class="kekkaHalf">
+        <div class="kekka"></div>
+    </div>
+
+    <div class="form">
+        <form action="get_confirm.php" method="get">
+            <input type="text" name = "text" class="text" placeholder="名前を入力して「Enter」">
+        </form>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./js/quiz.js"></script>
 </body>

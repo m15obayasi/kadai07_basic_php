@@ -1,4 +1,4 @@
-$(".upperHalf, .lowerHalf").hide();
+$(".upperHalf, .lowerHalf, .kekkaHalf, .form").hide();
 
 // 問題をここに格納
 checkArray = [];
@@ -7,7 +7,7 @@ checkArray = [];
 let answerCount = 0;
 
 // 残り時間
-let count = 5; 
+let count = 60; 
 
 // 問題一覧
 const questions = [
@@ -57,10 +57,11 @@ function gameStart() {
 $(".upperHalf").on("click", function () {
     if (checkArray[0] < checkArray[1])
     {
-        answerCount++;
+        answerCount ++;
         $(".score").html(answerCount+"pt");
     } else {
-        $(".score").html("×");
+        answerCount = 0;
+        $(".score").html(answerCount + "pt");
     }
     checkArray = [];
     anotherQuestions = [];
@@ -71,10 +72,11 @@ $(".upperHalf").on("click", function () {
 // 回答時のアクション（下半分）
 $(".lowerHalf").on("click", function () {
     if (checkArray[0] > checkArray[1]) {
-        answerCount++;
+        answerCount ++;
         $(".score").html(answerCount + "pt");
     } else {
-        $(".score").html("×");
+        answerCount = 0;
+        $(".score").html(answerCount + "pt");
     }
     checkArray = [];
     gameStart();
@@ -87,9 +89,21 @@ function timerStart(){
         count--;
         $(".timer").html(count);
         if (count === 0) {
-            $(".timer").hide();
+            $(".timer, .upperHalf, .lowerHalf, .score").hide();
+            $(".kekkaHalf, .form").show();
+            $(".kekkaHalf").html("連続正答数は……" + "<br>" + answerCount + "問です！")
         }
     }, 1000);
-
-
 };
+
+// 名前を入力
+$(".text").keydown(function (e) {
+    if (e.keyCode == 13) { 
+        scorePush();
+    };
+});
+
+// スコア登録
+function scorePush() {
+    
+}
