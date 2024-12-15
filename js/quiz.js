@@ -1,4 +1,4 @@
-$(".upperHalf, .lowerHalf, .kekkaHalf, .form").hide();
+$(".upperHalf, .lowerHalf, .kekkaHalf, .form, .ranking").hide();
 
 // 問題をここに格納
 checkArray = [];
@@ -32,7 +32,7 @@ const questions = [
 
 // スタートボタンを押したとき
 $(".startHalf").on("click", function () {
-    $(".startHalf").hide();
+    $(".startHalf, .rankHalf").hide();
     $(".upperHalf, .lowerHalf").show();
     gameStart();
     timerStart();
@@ -105,5 +105,11 @@ $(".text").keydown(function (e) {
 
 // スコア登録
 function scorePush() {
-    
+    $(".myScore").val(answerCount);
+    $(".form").submit();
 }
+
+// スコアを表示
+$(".rankHalf").on("click", function () {
+    $(".ranking").show();
+});

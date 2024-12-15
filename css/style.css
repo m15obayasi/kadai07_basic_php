@@ -68,7 +68,7 @@ body{
     font-weight: bold;
 }
 
-.startHalf:hover, .upperHalf:hover,.lowerHalf:hover {
+.startHalf:hover, .upperHalf:hover,.lowerHalf:hover,.rankHalf:hover {
     background-color: #8490b3;
     color: #f2f8f2;
     cursor: pointer;
@@ -81,6 +81,18 @@ body{
     align-items: center;
     height: 40vh;
     font-size: 7vh;
+}
+
+.rankHalf {
+    margin-top: 10px;
+    background-color: #e4f0ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    font-size: 4vh;
+    font-weight: bold;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 .form{
