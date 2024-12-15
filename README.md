@@ -4,7 +4,7 @@
 - より古い出来事を選択するクイズアプリです。
 
 ## ③DEMO
-- https://m15obayasi.github.io/kadai05_api/
+- https://lanmadaw.sakura.ne.jp/kadai07_basic_php/
 
 ## ⑤工夫した点・こだわった点
 
