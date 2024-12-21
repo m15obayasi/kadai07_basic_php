@@ -1,14 +1,23 @@
 <?php
+
 require_once("funcs.php");
 
+$db_name = 'lanmadaw_gs-deploy_php02';               // データベース名
+$db_host = 'mysql3104.db.sakura.ne.jp';     // DBホスト
+$db_id   = 'lanmadaw_gs-deploy_php02';               // ユーザー名(さくらサーバはDB名と同一)
+$db_pw   = 'hogefuga123';                   // パスワード
+
 try {
-    $pdo = new PDO('mysql:dbname=kadai07_class;charset=utf8;host=localhost', 'root', '');
+//Password:MAMP='root',XAMPP=''
+$pdo = new PDO('mysql:dbname=kadai07_class;charset=utf8;host=localhost', 'root', '');
 } catch (PDOException $e) {
-    exit('DBConnectError' . $e->getMessage());
+exit('DBConnectError' . $e->getMessage());
 }
 
+//２．データ取得SQL作成
 $stmt = $pdo->prepare("SELECT * FROM kadai07_table;");
 $status = $stmt->execute();
+
 
 $view = "";
 if ($status == false) {
