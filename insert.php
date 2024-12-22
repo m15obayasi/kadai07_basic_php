@@ -1,9 +1,11 @@
 <?php
+require_once("db.php");
+
 $name = $_POST['name'];
 $myScore = $_POST['myScore'];
 
 try {
-    $pdo = new PDO('mysql:dbname=kadai07_class;charset=utf8;host=localhost', 'root', '');
+    $pdo = new PDO($dsn, $user, $password);
 } catch (PDOException $e) {
     exit('DBConnectError:' . $e->getMessage());
 }
