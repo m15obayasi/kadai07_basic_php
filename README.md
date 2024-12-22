@@ -5,6 +5,7 @@
 
 ## ③DEMO
 - https://lanmadaw.sakura.ne.jp/kadai07_basic_php/
+**　※ 「直近のスコア」をクリックすると、保存したデータの確認ができます。**
 
 ## ⑤工夫した点・こだわった点
 
